@@ -41,7 +41,7 @@ h6 {
 
 .page-section h2.section-heading::after {
   content: '';
-  width: 100px;
+  width: 200px;
   border-bottom: 3px solid #fec503;
   height: 2px;
   display: block;
@@ -239,6 +239,9 @@ header.masthead .intro-text .intro-heading {
 
 
 @media (max-width: 767px) {
+  .page-section h2.section-heading::after{
+    width: 100px;
+  }
   .text-muted-title {
     width: auto;
     font-size: 16px;
@@ -379,16 +382,17 @@ header.masthead .intro-text .intro-heading {
   padding: 0 20px 20px 100px;
 }
 .timeline > li .timeline-text {
-  width: 140px;
-  height: 140px;
+  padding: 0 20px 20px;
   margin-left: -85px;
-  background: #f9cd36;
+  background: #fff;
   margin: auto;
   border-radius: 100%;
 }
 .timeline > li .timeline-text h4 {
-  margin-top: 45px;
   padding: 14px 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .timeline > li .timeline-text .second {
@@ -663,16 +667,17 @@ header.masthead .intro-text .intro-heading {
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-text {
-    width: 140px;
-    height: 140px;
+    padding: 0 20px 20px;
     margin-left: -85px;
-    background: #f9cd36;
+    background: #fff;
     margin: auto;
     border-radius: 100%;
   }
   .timeline > li .timeline-text h4 {
-    margin-top: 45px;
-    padding: 0 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
   }
 }
 
