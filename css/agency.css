@@ -372,6 +372,12 @@ header.masthead .intro-text .intro-heading {
 
 .img-fluid-full {
   height: auto;
+  width: auto;
+  object-fit: contain;
+  box-shadow: 0 0px 7px 0px rgba(114, 114, 114, 0.32);
+}
+.img-fluid-full-specific {
+  height: auto;
   width: 100%;
   object-fit: contain;
   box-shadow: 0 0px 7px 0px rgba(114, 114, 114, 0.32);
